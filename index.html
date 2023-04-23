@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Score Keeper</title>
+</head>
+<body style="color:black">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <header class="card-header">
+                      <p class="card-header-title">
+                        Ping Pong Score Keeper
+                      </p>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <img src="image.avif" alt="" srcset="">
+                        <h2><span id="p1score">0</span> vs <span id="p2score">0</span></h2>
+                        <br>
+                        <label for="maxScore">Playing To : </label>
+                        <select id="maxScore">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button class="card-footer-item button is-primary" id="p1">Player1</button>
+                        <button class="button is-link card-footer-item" id="p2">Player2</buttonid>
+                        <button class="button is-danger card-footer-item" id="reset">Reset</button>
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
